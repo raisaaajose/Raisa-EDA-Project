@@ -39,8 +39,3 @@ The script generates **12 high-quality visualizations**:
 *   **Faceted Scatter Plot**: MPG vs. Displacement, broken down by Region (Faceted).
 *   **Faceted Boxplot**: MPG vs. Cylinders, broken down by Region.
 
-
-## Technologies Used
-*   **R Language**
-*   **Tidyverse** (ggplot2, dplyr, readr)
-*   **Corrplot** (for correlation matrices)
