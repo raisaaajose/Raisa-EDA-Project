@@ -17,7 +17,7 @@ The goal of this analysis is to understand the factors affecting vehicle fuel ef
     *   Feature engineering: Created a `weight_per_hp` metric.
 4.  **Statistical Analysis**: Generating descriptive statistics to understand the data distribution.
 
-## 📊Visualizations
+## Visualizations
 
 The script generates **12 high-quality visualizations**:
 
