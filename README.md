@@ -1,41 +1,41 @@
 # Raisa Jose - EDA Course Project
 
-This project performs a comprehensive Exploratory Data Analysis on the **Auto MPG Dataset**. The script covers the first phase of the data science workflow, from data cleaning and transformation to advanced multivariate visualization.
+This project performs Exploratory Data Analysis on the **Auto MPG Dataset** using **R and Python**. The analysis covers data cleaning, transformation, 1D, 2D, and 3D statistical analysis, visualization, and clustering.
 
 ## Project Overview
-The goal of this analysis is to understand the factors affecting vehicle fuel efficiency (MPG), such as weight, horsepower, and origin, using the R programming language.
+
+The objective is to analyze the factors influencing vehicle fuel efficiency (`mpg`) using variables such as weight, horsepower, displacement, cylinders, model year, and origin.
 
 ## Analysis Workflow
 
-1.  **Data Loading**: Importing the dataset and ensuring correct data types.
-2.  **Data Cleaning**: 
-    *   Identifying and handling missing values.
-    *   Converting `horsepower` to numeric (handling non-numeric placeholders like "?").
-    *   Imputing missing values using the median.
-3.  **Data Transformation**: 
-    *   Converting categorical features (`origin`, `cylinders`) into factors for better plotting.
-    *   Feature engineering: Created a `weight_per_hp` metric.
-4.  **Statistical Analysis**: Generating descriptive statistics to understand the data distribution.
+1. **Data Cleaning**
+   - Checked missing values and corrected data types.
+   - Converted `horsepower` to numeric and handled missing values.
+   - Converted categorical variables such as `origin` and `cylinders`.
+   - Created the derived feature `weight_per_hp`.
 
-## Visualizations
+2. **1D Analysis**
+   - Descriptive statistics including mean, median, variance, standard deviation, IQR, skewness, and kurtosis.
+   - Frequency distributions, quantiles, coefficient of variation, and outlier analysis.
+   - Distribution and boxplot-based visualizations.
 
-The script generates **12 high-quality visualizations**:
+3. **2D Analysis**
+   - Covariance and correlation analysis.
+   - Pearson and Spearman correlation tests.
+   - Grouped statistics and contingency tables.
+   - Chi-square test, one-way ANOVA, Tukey HSD, and simple linear regression.
+   - Scatterplot matrix and regression diagnostics.
 
-### 1. Univariate Analysis
-*   **MPG Distribution**: Histogram showing the frequency of fuel efficiency.
-*   **Origin Count**: Bar chart showing where the vehicles were manufactured.
-*   **Acceleration Spread**: Boxplot showing the distribution and outliers of 0-60mph times.
-*   **Weight Density**: Density plot visualizing the distribution of vehicle mass.
+4. **3D / Multivariate Analysis**
+   - Three-variable grouped summaries.
+   - 3D scatter visualization.
+   - Multiple linear regression.
+   - Two-way ANOVA.
+   - Analysis of MPG trends across model years and origins.
 
-### 2. Bivariate Analysis
-*   **MPG vs. Weight**: Scatter plot with a linear regression line.
-*   **Efficiency by Region**: Boxplot comparing MPG across USA, Europe, and Japan.
-*   **Horsepower vs. Acceleration**: Scatter plot with a smoothing line.
-*   **Cylinder Influence**: Violin plot showing MPG density for different cylinder counts.
-
-### 3. Multivariate Analysis
-*   **Bubble Chart**: Weight vs. MPG, colored by Origin and sized by Horsepower.
-*   **Correlation Heatmap**: A matrix visualizing the correlation coefficients between all numeric features.
-*   **Faceted Scatter Plot**: MPG vs. Displacement, broken down by Region (Faceted).
-*   **Faceted Boxplot**: MPG vs. Cylinders, broken down by Region.
-
+5. **Clustering**
+   - Standardized numerical features before clustering.
+   - Applied **K-Means clustering** with Elbow and Silhouette methods for cluster selection.
+   - Applied **Hierarchical clustering** using Ward, Single, Complete, and Average linkage.
+   - Generated dendrograms, PCA cluster visualizations, silhouette plots, and cluster profiles.
+   - Compared K-Means and Hierarchical clustering results.
